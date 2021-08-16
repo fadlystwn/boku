@@ -1,0 +1,8 @@
+.Book {
+    display: flex;
+    flex-direction: row;
+}
+
+.Book-wrapper {
+    padding: 16px;
+}
