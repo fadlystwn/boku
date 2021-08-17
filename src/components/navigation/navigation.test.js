@@ -3,7 +3,7 @@ import {render} from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Navigation from './Navigation';
 
-describe('Testing Navigation menuc omponent', () => {
+describe('Testing Navigation menu component', () => {
 
     const menu = [
         { id: 'nav1', name: 'Home', link: '/'},
