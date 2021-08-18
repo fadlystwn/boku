@@ -22,6 +22,7 @@ const Book = (props) => {
                             <Image data={item.images} size="small"/>
                             <div className="book-title">{item.title}</div>
                             <div className="book-author">{item.author}</div>
+                            <div className="book-price">{item.price}</div>
                             <div className="book-description">{item.description}</div>
                         </div>
                     )

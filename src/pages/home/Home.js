@@ -6,8 +6,12 @@ import {Books} from '../../api-data';
 const Home = () => {
     return (
         <div className="container">
-           <h1>Promo buy 2 get 1!</h1>
+           <h1>New Release</h1>
            <hr/>
+            <Book books={Books}/>
+           <h1>Best Seller</h1>
+            <Book books={Books}/>
+           <h1>Editors Pick</h1>
             <Book books={Books}/>
         </div>
     )
