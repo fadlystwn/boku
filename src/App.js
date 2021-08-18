@@ -1,17 +1,12 @@
-import Home from './pages/home/Home';
-import Navigation from './components/navigation/Navigation.js';
-import './App.css';
+import React from 'react';
+import Routes from './routes/Routes';
 
-const menu = [
-  { id: 'nav1', name: 'home', link: '/'},
-  { id: 'nav2', name: 'About', link: '/about'},
-]
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navigation menu={menu}/>
-      <Home/>
+     <Routes/>
     </div>
   );
 }

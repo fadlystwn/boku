@@ -1,0 +1,21 @@
+.Navigation {
+    background-color: #DDD;
+   padding: 8px;
+}
+
+.Navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.Navigation ul li {
+    margin-right: 16px;
+}
+
+.Navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
