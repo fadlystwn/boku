@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from '../pages/home/Home';
+import Profile from '../pages/profile/Profile';
 import NoMatch from '../pages/NoMatch';
 
 const Routes = () => {
@@ -14,6 +15,9 @@ const Routes = () => {
             <Switch>
               <Route exact path="/">
                 <Home />
+              </Route>
+              <Route exact path="/profile">
+                <Profile />
               </Route>
               <Route path="*">
                 <NoMatch />

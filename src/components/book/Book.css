@@ -6,3 +6,18 @@
 .Book-wrapper {
     padding: 16px;
 }
+
+.book-title {
+    font-weight: bold;
+    line-height: 24px;
+}
+.book-author {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #333;
+}
+
+.book-rating {
+    color:rgb(237, 184, 87)
+}
