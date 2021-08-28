@@ -1,6 +1,6 @@
 .Navigation {
-    background-color: #DDD;
-   padding: 8px;
+    background-color: #efb815;
+    padding: 8px;
 }
 
 .Navigation ul {
@@ -15,7 +15,7 @@
 
 .Navigation ul li a {
     text-decoration: none;
-    color: #333;
+    color: #503606;
     font-weight: bold;
 }
 

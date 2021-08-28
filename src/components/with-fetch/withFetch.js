@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function withFetch(WrappedComponent, fetchData) {
-    return class extends React.Component {
+    return class WithFech extends React.Component {
         constructor(props) {
             super(props)
             this.state = {

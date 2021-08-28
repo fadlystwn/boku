@@ -4,11 +4,20 @@
 }
 
 .Book-wrapper {
+    box-shadow: 2px 4px 16px 4px #ddd;
+    display: flex;
+    flex-direction: column;
+    max-width: 160px;
+    margin: 16px;
     padding: 16px;
+    border-radius: 4px;
 }
 
 .book-title {
-    font-weight: bold;
+    margin-top: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     line-height: 24px;
 }
 .book-author {
@@ -20,4 +29,8 @@
 
 .book-rating {
     color:rgb(237, 184, 87)
+}
+.book-price {
+    font-weight: bold;
+    margin-top: auto;
 }

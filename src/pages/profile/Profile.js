@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Profile = () => {
-    <div>Profile</div>
+    return <div>Profile</div>
 }
 
 export default Profile
