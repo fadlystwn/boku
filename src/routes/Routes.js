@@ -8,6 +8,7 @@ import {
 import Home from '../pages/home/Home';
 import Profile from '../pages/profile/Profile';
 import NoMatch from '../pages/NoMatch';
+import ProductDetails from '../pages/product-details/ProductDetails';
 
 const Routes = () => {
     return (
@@ -19,9 +20,13 @@ const Routes = () => {
               <Route exact path="/profile">
                 <Profile />
               </Route>
+              <Route path="/:productName">
+                <ProductDetails />
+              </Route>
               <Route path="*">
                 <NoMatch />
               </Route>
+              
             </Switch>
         </Router>
     )
