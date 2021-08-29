@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Layout from '../../layout/Layout';
 import fetchBooks from '../../api/book-api';
 import withFetch from '../../components/with-fetch/withFetch';
@@ -23,4 +24,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withRouter(Home)
