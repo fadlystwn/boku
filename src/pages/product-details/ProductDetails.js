@@ -1,6 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import {useLocation} from 'react-router';
 import fetchProductDetails from '../../api/product-details';
+import Layout from '../../layout/Layout';
+
+const Product = (props) => (
+    <div className="product">
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
+    </div>
+)
 
 const ProductDetails = () => {
 
@@ -17,24 +25,15 @@ const ProductDetails = () => {
         })
     },[location.state])
     
-    console.log(product)
     return (
-        <div>
+        <Layout>
            {
-               Object.values(product).map( item => {
-                   return (
-                        <div className="ProductDetails">
-                            <h1>{item.title}</h1>
-                            <p>{item.description}</p>
-                            <p>{item.description}</p>
-                            
-                        </div>
-                   )
-               })
+               <Product {...product.volumeInfo}/>
            }
-           
-        </div>
+        </Layout>
     )
+        
+    
 }
 
 export default ProductDetails
