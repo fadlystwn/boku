@@ -13,16 +13,15 @@ const Book = (props) => {
                     const {title, authors, averageRating, imageLinks} = item.volumeInfo
                     const {retailPrice} = item.saleInfo;
                     const price = formatCurrency(retailPrice && retailPrice.amount)
-                    const LinkTo = {pathname: `/${convertToSlug(title && title)}`, state: item.id}
+                    // const LinkTo = {pathname: `/${convertToSlug(title && title)}`, state: item.id}
+                    
                     return (
                         <div data-testid="books" className="Book-wrapper" key={item.id}>
-                                <Link to={LinkTo}>
-                                <img src={imageLinks.smallThumbnail} alt="product"/>
-                                <div className="book-title">{title}</div>
-                                <div className="book-rating">{averageRating}</div>
-                                <div className="book-author">{authors && authors}</div>
-                                <div className="book-price">{price}</div>
-                            </Link>
+                            <img src={imageLinks.smallThumbnail} alt="product"/>
+                            <div className="book-title">{title}</div>
+                            <div className="book-rating">{averageRating}</div>
+                            <div className="book-author">{authors && authors}</div>
+                            <div className="book-price">{price}</div>
                         </div>
                     )
                 }) : <div data-testid="no-books">Empty..</div>
